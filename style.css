@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #a3bffa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 40%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1;
+    margin: 0.6rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #7c3aed;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.buttons button:hover {
+    background-color: #5b21b6;
+}
+
+.section {
+    margin-top: 1.5rem;
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 0.2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#ulItems input[type="checkbox"],
+#completedUlItems input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+#completedUlItems li {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #e0e7ff;
+    opacity: 0.7;
+}
